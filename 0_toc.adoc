@@ -1,0 +1,8 @@
+[[devtester-grails-openshift]]
+== Hands-on Groovy Grails with Openshift
+
+[[lab-exercises-table-of-contents]]
+=== Lab Exercises Table of Contents
+
+* Lab 0. link:0-Setting-up-tools.adoc[Setting up tools]
+* Lab 1. link:1-Create-New-Project.adoc[Creating an base application]

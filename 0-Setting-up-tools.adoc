@@ -1,0 +1,63 @@
+[[setting-up-tools]]
+=== Setting up tools
+
+In this Lab we will look at how to install the necessary tools for this course.
+
+*Installing Tools*
+
+After completing this section, you should be able to:
+
+* Have all tools installed properly in order for the first project to run.
+
+* Note: This setup only works for `windows 10` machines.
+
+*Locating the binaries or executables*
+
+* Java: https://www.oracle.com/technetwork/java/javase/downloads/index.html (any jdk version should work just fine)
+    ** Install Java with default.
+* Grails: https://github.com/grails/grails-core/releases (latest release)
+    ** Please download the latest zip file.
+    ** Don't do anything with it yet.
+* IntelliJ: https://www.jetbrains.com/idea/download/#section=windows (Ultimate for Grails support)
+    ** Install IntelliJ with default ( + associate groovy, kt file types )
+* Docker: https://hub.docker.com/editions/community/docker-ce-desktop-windows (please register)
+    ** Install Docker with default.
+
+*Environment Variables*
+
+Some tools will require more attention for them to work:
+
+1.  *OSX and Linux:*
++
+Should be easy for you to install the mentioned tools :)
+2.  *Windows:*
++
+2.1. Java and Grails
+
+- Java - http://bfy.tw/NKCo
+- Grails - unzip and put it in a location for `tools`, now in the same environment variables screen as for above `java` add your location under `system variables` -> `path`, below picture only as reference:
+
+image::images/grails-env.PNG[image]
+
+*CLI tools check versions*
+
+- Open a command prompt `WinKey+R` + type `cmd`.
+- If any of below commands outputs other then the versions installed please review the steps.
+
+[source,shell]
+----
+$ java --version
+$ grails --version
+$ docker --version
+----
+
+*Troubleshooting*
+
+`Docker` - right click on docker tray icon and select settings:
+
+- Expose daemon:
+    ** Expose daemon on tcp://localhost:2375 without TLS.
+- Memory issues:
+    ** If you have less than 2GB Ram available for Docker please lower the memory usage.
+
+link:0_toc.adoc[Table Of Contents]
