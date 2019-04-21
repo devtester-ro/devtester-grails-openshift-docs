@@ -34,7 +34,8 @@ Should be easy for you to install the mentioned tools :)
 +
 2.1. Java and Grails
 
-- Java - http://bfy.tw/NKCo
+- Java - http://bfy.tw/NKCo (windows is at the bottom)
+    ** Add `system variables` -> `path` with the location of java on your hard drive + `/bin`
 - Grails - unzip and put it in a location for `tools`, now in the same environment variables screen as for above `java` add your location under `system variables` -> `path`, below picture only as reference:
 
 image::images/grails-env.PNG[image]
