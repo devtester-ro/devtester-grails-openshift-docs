@@ -73,7 +73,7 @@ class InventoryController {
         render "Here is a list of everything."
     }
 
-    //Action 2
+    //Action 2 - for creating the View
     def edit() {
         //variables
         def productName = "Breakfast Blend"
