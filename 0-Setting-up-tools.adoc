@@ -9,7 +9,7 @@ After completing this section, you should be able to:
 
 * Have all tools installed properly in order for the first project to run.
 
-* Note: This setup only works for `windows 10` machines.
+* Note: This setup designed for `windows 10` machines.
 
 *Locating the binaries or executables*
 
