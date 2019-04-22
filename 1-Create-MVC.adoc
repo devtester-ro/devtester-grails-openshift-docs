@@ -13,11 +13,10 @@ After completing this section, have your application in Full-Stack:
 - Select `New` -> `Grails Controller` -> Name `Inventory`
 
 Console:
-
-****
+----
 |Created grails-app/controllers/devtester/grails/openshift/InventoryController.groovy
 |Created src/test/groovy/devtester/grails/openshift/InventoryControllerSpec.groovy
-****
+----
 
 *Note:* you can observe the test class that was generated for this controller `InventoryControllerSpec.groovy`
 
@@ -25,14 +24,15 @@ Add logic to controller and Run application
 
 - Within your `InventoryController.groovy`
 
-****
+[source,groovy]
+----
 class InventoryController {
 
     def index() {
         render "Here is a list of everything."
     }
 }
-****
+----
 
 - Run the application and you should see your first available controller
 
