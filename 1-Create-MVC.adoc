@@ -90,4 +90,51 @@ class InventoryController {
 }
 ----
 
+- Open `grails-app` -> `views`
+- Right Click on `inventory`
+- Select `New` -> `GSP` -> Name `edit`
+
+*Note:* the view has to have the same name as the action that you defined, in our case `edit`.
+
+[source,html]
+----
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+
+</body>
+</html>
+----
+
+- Now let's populate the `view` with data from the `edit controller`
+
+*Note:* using the `map-keys` in order to display the data.
+
+[source,html]
+----
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+<head>
+    <title>Edit Inventory</title>
+</head>
+
+<body>
+
+<form>
+    Product: <input type="text" size=40 name="product" value="${product}"/>
+
+    <p>SKU: <input type="text" name="sku" value="${sku}"/></p>
+</form>
+
+</body>
+</html>
+----
+
+- Browse to the `/edit` and voila
+image::images/first-view.PNG[image]
+
 link:0_Readme.adoc[Table Of Contents]
