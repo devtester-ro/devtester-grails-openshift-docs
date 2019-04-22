@@ -110,7 +110,7 @@ class InventoryController {
 </html>
 ----
 
-- Now let's populate the `view` with data from the `edit controller`
+- Now let's populate the `view` with data from the `edit controller`.
 
 *Note:* using the `map-keys` in order to display the data.
 
@@ -135,6 +135,7 @@ class InventoryController {
 ----
 
 - Browse to the `/edit` and voila
+
 image::images/first-view.PNG[image]
 
 link:0_Readme.adoc[Table Of Contents]
