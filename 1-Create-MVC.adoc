@@ -41,5 +41,53 @@ image::images/first-controller.PNG[image]
 
 *Note:* you can also browse directly - http://localhost:8080/inventory/index
 
+- Every method is an `action` - index will be the default action so you can type `http://localhost:8080/inventory/`
+- Now let's create a new action - `remove`
+
+[source,groovy]
+----
+class InventoryController {
+
+    //Action 1
+    def index() {
+        render "Here is a list of everything."
+    }
+
+    //Action 2
+    def remove() {
+        render "You have one less than before."
+    }
+}
+----
+
+*Step 2: Creating a View*
+
+- First step is to create an action:
+
+[source,groovy]
+----
+class InventoryController {
+
+    //Action 1
+    def index() {
+        render "Here is a list of everything."
+    }
+
+    //Action 2
+    def edit() {
+        //variables
+        def productName = "Breakfast Blend"
+        def sku = "BB01"
+
+        //map - key in the view and value is the variable
+        [product:productName, sku:sku]
+    }
+
+    //Action 3
+    def remove() {
+        render "You have one less than before."
+    }
+}
+----
 
 link:0_Readme.adoc[Table Of Contents]
