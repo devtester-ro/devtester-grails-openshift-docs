@@ -35,7 +35,7 @@ class InventoryController {
 }
 ----
 
-- Run the application and you should see your first available controller.
+- Run the application and you should see your first available controller:
 
 image::images/first-controller.PNG[image]
 
