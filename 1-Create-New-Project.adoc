@@ -11,30 +11,30 @@ After completing this section, you should be able to:
 
 *Start IntelliJ*
 
-1. Click on `Create new Project`
-2. Select `Grails` and now browse to the location where you have unzipped the grails files
+1. Click on `Create new Project`.
+2. Select `Grails` and now browse to the location where you have unzipped the grails files.
 
 image::images/new-project.PNG[image]
 
-3. Give your project a name e.g. : `devtester-grails-openshift`
+3. Give your project a name e.g. : `devtester-grails-openshift`.
 
 image::images/new-project-2.PNG[image]
 
-4. In ~ 5 minutes your project should be setup
+4. In ~ 5 minutes your project should be setup.
 
 image::images/project.PNG[image]
 
 *Run application*
 
-- Press `Play` button or hit `Shift+F10`
-- Wait for the application to load or start a browser on `http://localhost:8080`
+- Press `Play` button or hit `Shift+F10`.
+- Wait for the application to load or start a browser on `http://localhost:8080`.
 
 image::images/first-run.PNG[image]
 
 *Troubleshooting*
 
 - Change default port:
-    ** Hit `Ctrl+Shift+N` and type `application.yaml`
+    ** Hit `Ctrl+Shift+N` and type `application.yaml`.
     ** Scroll to the bottom and add:
 
         server:
