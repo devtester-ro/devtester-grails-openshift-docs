@@ -163,8 +163,83 @@ Console:
 $ grails create-domain-class devtester.grails.openshift.Product
 ----
 
-- After this please `refresh` Gradle so that the project is recognized properly
+- After this please `refresh` Gradle so that the project is recognized properly:
 
 image::images/gradle-refresh.PNG[image]
+
+- Open `Product.groovy`
+
+[source,groovy]
+----
+class Product {
+
+    //Fields
+    String name
+    String sku
+    Float price
+
+    static constraints = {
+    }
+}
+----
+
+- Restart application
+- Open - http://localhost:8080/h2-console -> Connect
+
+[source,shell]
+----
+JDBC Url: jdbc:h2:mem:devDb
+----
+
+- Add some products
+
+image::images/first-db-interaction.PNG[image]
+
+- Open `InventoryController.groovy`
+- Add a new `action`
+
+[source,groovy]
+----
+    //Action 4
+    def list() {
+        def allProducts = Product.list()
+        [allProducts: allProducts]
+    }
+----
+
+- Now we need a view called `list`
+- Open `grails-app` -> `views`
+- Right Click on `inventory`
+- Select `New` -> `GSP` -> Name `list`
+
+[source,groovy]
+----
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+<head>
+    <title>List Products</title>
+</head>
+
+<body>
+<table border="1">
+    <g:each in="${allProducts}" var="thisProduct">
+        <tr>
+            <td>${thisProduct.name}</td>
+            <td>${thisProduct.sku}</td>
+            <td>${thisProduct.price}</td>
+        </tr>
+    </g:each>
+</table>
+
+</body>
+</html>
+----
+
+- Open the app at - http://localhost:8080/inventory/list
+
+image::images/first-db-action.PNG[image]
+
+
+*Congrats you have a running Full-Stack application*
 
 link:0_Readme.adoc[Table Of Contents]
