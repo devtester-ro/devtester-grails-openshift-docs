@@ -43,11 +43,11 @@ image::images/grails-env.PNG[image]
 
 *OpenShift:*
 
-- OpenShift activate subscription
+- OpenShift activate subscription:
 
 image::images/openshift-sub.PNG[image]
 
-- Browse to console
+- Browse to console:
 
 image::images/openshift-catalog.PNG[image]
 
