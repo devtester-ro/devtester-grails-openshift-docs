@@ -54,11 +54,11 @@ $ docker --version
 
 *Troubleshooting*
 
-`Docker` - right click on docker tray icon and select settings:
+`Docker` - right click on docker `tray` icon and select `settings`:
 
 - Expose daemon:
-    ** Expose daemon on tcp://localhost:2375 without TLS.
+    ** Expose daemon on `tcp://localhost:2375 without TLS`.
 - Memory issues:
-    ** If you have less than 2GB Ram available for Docker please lower the memory usage.
+    ** If you have less than `2GB Ram` available for Docker please lower the memory usage.
 
 link:0_toc.adoc[Table Of Contents]
