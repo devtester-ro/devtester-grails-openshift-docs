@@ -6,3 +6,4 @@
 
 * Lab 0. link:0-Setting-up-tools.adoc[Setting up tools]
 * Lab 1. link:1-Create-New-Project.adoc[Creating an base application]
+* Lab 2. link:1-Create-MVC.adoc[Run application in Full-Stack]
