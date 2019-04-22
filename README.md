@@ -17,5 +17,7 @@ Documentation:
 
 - And yes you are ready to test your skills with - https://micronaut.io
 
+[Journey starts here](../blob/master/0-Readme.adoc)
+
 Enjoy!
 DevTester Team.
