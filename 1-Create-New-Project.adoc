@@ -26,7 +26,7 @@ image::images/project.PNG[image]
 
 *Run application*
 
-- Press `Play` button or hit `Shift+F10`.
+- Press `Play/Run` button or hit `Shift+F10`.
 - Wait for the application to load or start a browser on `http://localhost:8080`.
 
 image::images/first-run.PNG[image]
@@ -40,7 +40,7 @@ image::images/first-run.PNG[image]
         server:
             port: 8090
 
-    ** Hit `Play` and see that the app starts on the new assigned port.
+    ** Hit `Play/Run` and see that the app starts on the new assigned port.
 
 
 link:0_Readme.adoc[Table Of Contents]
