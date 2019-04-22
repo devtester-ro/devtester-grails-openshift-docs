@@ -24,7 +24,7 @@ After completing this section, you should be able to:
     ** Install Docker with default.
 * OpenShift: https://www.openshift.com/trial/ (please sing up and create a sandbox)
 
-*Environment Variables*
+*Environment Variables:*
 
 Some tools will require more attention for them to work:
 
@@ -41,11 +41,13 @@ Should be easy for you to install the mentioned tools :)
 
 image::images/grails-env.PNG[image]
 
-3. OpenShift activate subscription
+*OpenShift:*
+
+- OpenShift activate subscription
 
 image::images/openshift-sub.PNG[image]
 
-3.1 Browse to console
+- Browse to console
 
 image::images/openshift-catalog.PNG[image]
 
