@@ -1,0 +1,41 @@
+[[create-mvc]]
+=== Create MVC
+
+In this Lab we will look at how create a Model-View-Controller and access the model.
+
+*Step 1: Creating a Controller*
+
+After completing this section, have your application in Full-Stack:
+
+*Controller* can work without a *View* or *Model* and that's the place where the business logic will be found.
+
+1. Right Click on `grails-app`
+2. Select `New` -> `Grails Controller` -> Name `Inventory`
+
+Console:
+****
+|Created grails-app/controllers/devtester/grails/openshift/InventoryController.groovy
+|Created src/test/groovy/devtester/grails/openshift/InventoryControllerSpec.groovy
+****
+
+*Note:* you can observe the test class that was generated for this controller `InventoryControllerSpec.groovy`
+
+3. Within your `InventoryController.groovy`
+
+****
+class InventoryController {
+
+    def index() {
+        render "Here is a list of everything."
+    }
+}
+****
+
+4. Run the application and you should see your first available controller
+
+image::images/first-controller.PNG[image]
+
+*Note:* you can also browse directly - http://localhost:8080/inventory/index
+
+
+link:0_Readme.adoc[Table Of Contents]
