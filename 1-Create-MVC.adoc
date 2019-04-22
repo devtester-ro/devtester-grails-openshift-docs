@@ -138,4 +138,33 @@ class InventoryController {
 
 image::images/first-view.PNG[image]
 
+*Step 2: Creating a Model*
+
+- Query the data from the `database`, this is stored in the `model`.
+- In Grails `model` is actually the `domain`
+
+.Product
+|===
+|Name | SKU | Price
+|Breakast Blend | BB01 | 14.95
+|Espresso Blend | ES01 | 12.95
+|Columbian Roast | CO01 | 13.95
+|===
+
+- Open `grails-app` -> `domains`
+- Right Click on `domains`
+- Select `New` -> `Grails Domain Class` -> Name `product`
+
+*Note:* `domain` may not be available so to create the source folder:
+
+Console:
+[source,shell]
+----
+$ grails create-domain-class devtester.grails.openshift.Product
+----
+
+- After this please `refresh` Gradle so that the project is recognized properly
+
+image::images/gradle-refresh.PNG[image]
+
 link:0_Readme.adoc[Table Of Contents]
