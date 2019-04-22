@@ -47,7 +47,7 @@ image::images/grails-env.PNG[image]
 
 image::images/openshift-sub.PNG[image]
 
-*Note:* your subscription will be queued for activation - hit refresh or wait for the mail to arrive it may take some time.
+*Note:* your subscription will be queued for activation - hit refresh or wait for the mail to arrive, it may take some time.
 
 - Browse to console:
 
