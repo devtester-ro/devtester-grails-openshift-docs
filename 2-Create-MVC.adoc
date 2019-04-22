@@ -1,7 +1,7 @@
 [[create-mvc]]
-=== Create MVC
+=== Create Basic Application Stack
 
-In this Lab we will look at how create a Model-View-Controller and access the model.
+In this Lab we will look at how create a Model-View-Controller application and access the model.
 
 *Step 1: Creating a Controller*
 
