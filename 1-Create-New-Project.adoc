@@ -1,5 +1,5 @@
 [[create-new-project]]
-=== Create new project
+=== Create New Project
 
 In this Lab we will look at how create a new project.
 
@@ -42,5 +42,4 @@ image::images/first-run.PNG[image]
 
     ** Hit `Play/Run` and see that the app starts on the new assigned port.
 
-
-link:0_Readme.adoc[Table Of Contents]
+link:2-Create-MVC.adoc[Next Lab: Create New Project] | link:0-Readme.adoc[Table Of Contents]

@@ -74,4 +74,4 @@ $ docker --version
 - Memory issues:
     ** If you have less than `2GB Ram` available for Docker please lower the memory usage.
 
-link:0_Readme.adoc[Table Of Contents]
+link:1-Create-New-Project.adoc[Next Lab: Create New Project] | link:0-Readme.adoc[Table Of Contents]

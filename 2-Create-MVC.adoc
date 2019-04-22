@@ -173,7 +173,7 @@ image::images/gradle-refresh.PNG[image]
 ----
 class Product {
 
-    //Fields
+    //Fields within database
     String name
     String sku
     Float price
@@ -193,7 +193,11 @@ JDBC Url: jdbc:h2:mem:devDb
 
 - Add some products
 
+*Note:* you can see some other fields like `ID` and `VERSION` but this aren't handled by us so we will not go in detail about them.
+
 image::images/first-db-interaction.PNG[image]
+
+Now that we have at least 2 products in our db:
 
 - Open `InventoryController.groovy`
 - Add a new `action`
@@ -239,7 +243,8 @@ image::images/first-db-interaction.PNG[image]
 
 image::images/first-db-action.PNG[image]
 
+*Congrats you have a running Full-Stack application!*
 
-*Congrats you have a running Full-Stack application*
+From here on we will only add or expand our knowledge about `Grails` and `Groovy` and start to build the actual application.
 
-link:0_Readme.adoc[Table Of Contents]
+link:1-Design-Data-Layer.adoc[Next Lab: Design Data Layer] | link:0-Readme.adoc[Table Of Contents]
