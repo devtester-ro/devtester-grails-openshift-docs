@@ -9,10 +9,11 @@ After completing this section, have your application in Full-Stack:
 
 *Controller* can work without a *View* or *Model* and that's the place where the business logic will be found.
 
-1. Right Click on `grails-app`
-2. Select `New` -> `Grails Controller` -> Name `Inventory`
+- Right Click on `grails-app`
+- Select `New` -> `Grails Controller` -> Name `Inventory`
 
 Console:
+
 ****
 |Created grails-app/controllers/devtester/grails/openshift/InventoryController.groovy
 |Created src/test/groovy/devtester/grails/openshift/InventoryControllerSpec.groovy
@@ -20,7 +21,9 @@ Console:
 
 *Note:* you can observe the test class that was generated for this controller `InventoryControllerSpec.groovy`
 
-3. Within your `InventoryController.groovy`
+Add logic to controller and Run application
+
+- Within your `InventoryController.groovy`
 
 ****
 class InventoryController {
@@ -31,7 +34,7 @@ class InventoryController {
 }
 ****
 
-4. Run the application and you should see your first available controller
+- Run the application and you should see your first available controller
 
 image::images/first-controller.PNG[image]
 
