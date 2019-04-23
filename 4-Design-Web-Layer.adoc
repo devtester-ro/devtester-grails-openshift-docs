@@ -3,7 +3,7 @@
 
 In this Lab we will look at how design our Web Layer.
 
-=== Step 1: Change the grails logo
+=== Step 1: Change The Grails Logo
 
 - Within `images` -> `project` -> use the `demi_logo.png` (this project)
 - Move it into your project under - `grails-app` -> `assets` -> `images`
@@ -17,9 +17,9 @@ In this Lab we will look at how design our Web Layer.
 
 - Just change the `grails.svg` to `demi_logo.png`
 
-*Exercise:* change the `favicon` from the grails cup to the one in `projects` -> `cupicon.gif`
+*Exercise (Optional):* change the `favicon` from the grails cup to the one in `projects` -> `cupicon.gif`
 
-=== Step 3: Demo - Create New Controller
+=== Step 3: (Demo Form) - Create New Controller
 
 By now you should the hang of it so I will just say:
 
@@ -31,7 +31,7 @@ By now you should the hang of it so I will just say:
 *Note* - url should be http://localhost:8080/feedback
 
 
-=== Step 2: Demo - Populate the form
+=== Step 2: (Demo Form) - Populate The Form
 
 It's time to populate the form and have a working controller, this will help us gain knowledge and go forward with our application.
 
@@ -84,7 +84,7 @@ It's time to populate the form and have a working controller, this will help us 
 
 In this form you will see different fields like `checkbox` / `radio` / `select` etc
 
-=== Step 3: Create your Kiosk view and Form
+=== Step 3: Create Your Kiosk View And Form
 
 - In `views` -> `customer` - add the following: `_kioskForm.gsp` and `checkin.gsp`
 - If now we open our application we notice that `checkin` is not available
