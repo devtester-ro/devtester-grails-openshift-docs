@@ -1,5 +1,5 @@
 [[setting-up-tools]]
-== Setting up tools
+== Setting Up Tools
 
 In this Lab we will look at how to install the necessary tools for this course.
 
