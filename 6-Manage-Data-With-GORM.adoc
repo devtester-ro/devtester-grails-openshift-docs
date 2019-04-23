@@ -77,6 +77,7 @@ class CustomerController {
 - Add every `action` within `CustomerController`
 
 - List:
+
 [source,groovy]
 ----
 //uncomment index and make it so it displays max 10 users + pagination
