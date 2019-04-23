@@ -14,7 +14,7 @@ We need to understand what our application does so the best way is to have some 
 
 Now that we have established our use cases this is the database relationship:
 
-image::images/database-relations.PNG[image]
+image::images/database-relations.PNG[image,400,400]
 
 - One to many relationship - e.g - a Customer can create many Orders
 - Many to many - e.g Order to Product since both are a child of OrderItem
@@ -23,7 +23,7 @@ Explain the domains that need to be created:
 
 *Domains:*
 
-image::images/db-schema.PNG[image]
+image::images/db-schema.PNG[image,400,400]
 
 *Step 1: Create Domain Classes*
 
