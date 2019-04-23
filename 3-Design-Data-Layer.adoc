@@ -133,6 +133,9 @@ Working with Data, build a complete front-end and controllers so that you can pe
 
 [source,groovy]
 ----
+import grails.gorm.transactions.Transactional
+
+@Transactional
 class CustomerController {
 
     static scaffold = Customer
@@ -200,6 +203,9 @@ You may have noticed by now that your data will be destroyed at every app re-run
 
 [source,groovy]
 ----
+import grails.gorm.transactions.Transactional
+
+@Transactional
 class BootStrap {
 
     def init = { servletContext ->

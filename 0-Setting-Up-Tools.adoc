@@ -73,5 +73,7 @@ $ docker --version
     ** Expose daemon on `tcp://localhost:2375 without TLS`.
 - Memory issues:
     ** If you have less than `2GB Ram` available for Docker please lower the memory usage.
+- Hibernate:
+    ** Please note that when using any database operations the specific class has to be annotated with `@Transactional` - `import grails.gorm.transactions.Transactional`
 
 link:1-Create-New-Project.adoc[Next Lab: Create New Project] | link:0-Readme.adoc[Table Of Contents]
