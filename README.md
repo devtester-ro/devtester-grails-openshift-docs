@@ -1,5 +1,4 @@
-# devtester-grails-openshift-docs
-Documentation:
+# Grails 4.0 Basic Application in OpenShift
 
 - Create your very first full-stack web application and deploy it in a cloud environment.
 - A step by step guide using the latest technologies.
