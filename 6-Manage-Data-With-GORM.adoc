@@ -44,7 +44,6 @@ class WhiteboardController {
     }
 }
 ----
-- Open browser at - http://localhost:8080/whiteboard/variables
 
 === Step 2: Strings
 
@@ -79,9 +78,7 @@ def strings() {
     }
 ----
 
-- Open browser at - http://localhost:8080/whiteboard/strings
-
-=== Step 3: Conditions
+=== Step 2: Conditions
 
 [source,groovy]
 ----
@@ -113,9 +110,7 @@ def strings() {
     }
 ----
 
-- Open browser at - http://localhost:8080/whiteboard/conditions
-
-=== Step 4: Create First Service
+=== Step 3: Service
 
 Now to create something more useful like a `service`
 
