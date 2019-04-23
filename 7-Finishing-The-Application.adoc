@@ -170,6 +170,6 @@ Now refresh the page and see that the `Total Points` will be calculated properly
 
 *Managing Data is finished!*
 
-We can now move on to Finishing of our application.
+We can now move on to Manage data with GORM of our application.
 
-link:7-Finishing-The-Application.adoc[Next Lab: Manage Data With GORM] | link:0-Readme.adoc[Table Of Contents]
+link:6-Manage-Data-With-GORM.adoc[Next Lab: Manage Data With GORM] | link:0-Readme.adoc[Table Of Contents]
