@@ -1,7 +1,7 @@
 [[create-mvc]]
-== Design Data Layer
+== Design Web Layer
 
-In this Lab we will look at how design our Data Layer.
+In this Lab we will look at how design our Web Layer.
 
 === Step 1: Use Cases
 
