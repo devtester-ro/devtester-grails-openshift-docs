@@ -17,7 +17,7 @@ Documentation:
 
 - And yes you are ready to test your skills with - https://micronaut.io
 
-- [Journey starts here](../master/0-Readme.adoc)
+- [Journey starts here](https://github.com/devtester-ro/devtester-grails-openshift-docs/blob/master/0-Readme.adoc)
 
 Enjoy!
 DevTester Team.
