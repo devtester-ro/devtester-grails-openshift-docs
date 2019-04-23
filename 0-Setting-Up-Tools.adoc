@@ -18,7 +18,7 @@ After completing this section, you should be able to:
 * Grails: https://github.com/grails/grails-core/releases (latest release)
     ** Please download the latest zip file.
     ** Don't do anything with it yet.
-* IntelliJ: https://www.jetbrains.com/idea/download/#section=windows (Ultimate for Grails support)
+* IntelliJ Ultimate: https://www.jetbrains.com/idea/download/#section=windows (for Grails support)
     ** Install IntelliJ with default ( + associate groovy, kt file types )
 * Docker: https://hub.docker.com/editions/community/docker-ce-desktop-windows (please register)
     ** Install Docker with default.
