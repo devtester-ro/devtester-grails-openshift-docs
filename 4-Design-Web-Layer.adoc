@@ -91,10 +91,15 @@ In this form you will see different fields like `checkbox` / `radio` / `select` 
 
 *Question:* Can you say what it's missing from our application in order to render correctly our `checkin` page?
 
--
+- Open `CustomerController.groovy` (CTRL+Shift+N | and type CustomerController + Hit Enter)
+- Define a new `action` -> `checkin`
+- Within `images` -> `project` -> use the `banner.png` (this project) and add it to the `assets`
+- Re-run the application and browse to http://localhost:8080/customer/checkin
+
+image::images/web-view.PNG[image]
 
 *Web design is finished!*
 
-We can now move on to the Web Layer of our application.
+We can now move on to the Logic Layer of our application.
 
 link:5-Design-Logic-Layer.adoc[Next Lab: Design Logic Layer] | link:0-Readme.adoc[Table Of Contents]
