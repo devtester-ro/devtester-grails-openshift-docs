@@ -1,9 +1,9 @@
 [[create-mvc]]
-=== Create Basic Application Stack
+== Create Basic Application Stack
 
 In this Lab we will look at how create a Model-View-Controller application and access the model.
 
-*Step 1: Creating a Controller*
+=== Step 1: Creating a Controller
 
 After completing this section, have your application in Full-Stack:
 
@@ -60,7 +60,7 @@ class InventoryController {
 }
 ----
 
-*Step 2: Creating a View*
+=== Step 2: Creating a View
 
 - First step is to create an action:
 
@@ -138,7 +138,7 @@ class InventoryController {
 
 image::images/first-view.PNG[image]
 
-*Step 2: Creating a Model*
+=== Step 3: Creating a Model
 
 - Query the data from the `database`, this is stored in the `model`.
 - In Grails `model` is actually the `domain`

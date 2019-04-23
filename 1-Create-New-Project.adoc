@@ -1,5 +1,5 @@
 [[create-new-project]]
-=== Create New Project
+== Create New Project
 
 In this Lab we will look at how create a new project.
 

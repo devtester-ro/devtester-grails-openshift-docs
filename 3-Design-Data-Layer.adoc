@@ -1,9 +1,9 @@
 [[create-mvc]]
-=== Design Data Layer
+== Design Data Layer
 
 In this Lab we will look at how design our Data Layer.
 
-*Step 1: Use Cases*
+=== Step 1: Use Cases
 
 We need to understand what our application does so the best way is to have some use cases:
 
@@ -25,7 +25,7 @@ Explain the domains that need to be created:
 
 image::images/db-schema.PNG[image,400,600]
 
-*Step 2: Create Domain Classes*
+=== Step 2: Create Domain Classes
 
 - Open `grails-app` -> `domains`
 - Right Click on `domains`
@@ -124,7 +124,7 @@ Now let's refactor that Order.groovy class:
 - Right Click on `Order.groovy` -> Refactor - and just give it a new name like `OnlineOrder`
 - Re-run application and check if everything is ok.
 
-*Step 3: Dynamic Scaffolding*
+=== Step 3: Dynamic Scaffolding
 
 Working with Data, build a complete front-end and controllers so that you can perform `CRUD` operations.
 
@@ -153,7 +153,7 @@ image::images/scaffold-customer.PNG[image]
 
 - If you want to customize the view for `scaffolding` you need to use `static scaffolding` not `dynamic scaffolding` but this we will not cover in this lab, still is good to know that it exists.
 
-*Step 4: Constraints*
+=== Step 4: Constraints
 
 - Create mandatory fields
 - How many chars a user can enter
@@ -191,7 +191,7 @@ class Customer {
 
 image::images/db-constraints.PNG[image]
 
-*Step 5: Bootstrapping*
+=== Step 5: Bootstrapping
 
 You may have noticed by now that your data will be destroyed at every app re-run. So to have a set of data inserted at app start we will use `BootStrap.groovy`
 
