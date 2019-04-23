@@ -86,6 +86,13 @@ In this form you will see different fields like `checkbox` / `radio` / `select` 
 
 === Step 3: Create your Kiosk view and Form
 
+- In `views` -> `customer` - add the following: `_kioskForm.gsp` and `checkin.gsp`
+- If now we open our application we notice that `checkin` is not available
+
+*Question:* Can you say what it's missing from our application in order to render correctly our `checkin` page?
+
+-
+
 *Web design is finished!*
 
 We can now move on to the Web Layer of our application.
