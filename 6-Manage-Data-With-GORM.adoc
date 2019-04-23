@@ -70,7 +70,7 @@ class CustomerController {
 }
 ----
 
-- Open browser at - http://localhost:8080/customer/lookup
+- Open browser at - http://localhost:8080/customer/lookup (one line at at time - refresh to see the results)
 
 === Step 2: Advanced CRUD Operations
 
