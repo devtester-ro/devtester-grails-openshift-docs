@@ -21,25 +21,9 @@ image::images/database-relations.PNG[image]
 
 Explain the domains that need to be created:
 
-*Customer:*
+*Domains:*
 
-image::images/db-customer.PNG[image]
-
-*Award:*
-
-image::images/db-award.PNG[image]
-
-*Order:*
-
-image::images/db-order.PNG[image]
-
-*OrderItem:*
-
-image::images/db-order-item.PNG[image]
-
-*Product:* (already created)
-
-image::images/db-product.PNG[image]
+image::images/db-schema.PNG[image]
 
 *Step 1: Create Domain Classes*
 
