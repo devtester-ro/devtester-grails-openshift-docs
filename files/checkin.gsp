@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<g:form url="[resource: customerInstance, action: 'customerLookup']">
+<g:form url="[resource: customer, action: 'customerLookup']">
     <g:render template="kioskForm"/>
 </g:form>
 

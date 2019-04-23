@@ -3,9 +3,112 @@
 
 In this Lab we will finish our application.
 
-=== Step 1: List Queries
+=== Step 1: Linking Go and Delete
 
-TODO
+For the final touches we want to first link the two button `go` and `delete`
+
+- First off - `open` -> `_kioskForm.gsp`
+- Navigate to the - `Fourth button row`
+
+We need to modify:
+
+a. delete - just to redirect to this page.
+b. go - submit the data.
+
+[source, html]
+----
+<div class="row"><!-- Fourth Button Row -->
+    <div class="col-sm-4">
+        <g:link class="btn btn-danger btn-lg btn-block" action="checkin">Del</g:link>
+    </div>
+
+    <div class="col-sm-4">
+        <input class="btn btn-primary btn-lg btn-block" type="button" name="pad" value="0"
+               onclick="padkey(this.value)"/>
+    </div>
+
+    <div class="col-sm-4">
+        <g:submitButton class="btn btn-success btn-lg btn-block" name="pad" value="Go"/>
+    </div>
+</div>
+----
+
+Since `delete` is basically an redirect this is simple but `submit` actually calls an `action` from `checkin.gsp` -> `customerLookup`
+
+[source, html]
+----
+<g:form url="[resource: customer, action: 'customerLookup']">
+    <g:render template="kioskForm"/>
+</g:form>
+----
+
+We need to create it in `CustomerController`
+
+[source, groovy]
+----
+def customerLookup(Customer lookup) {
+    //Query customer by phone number
+    //If no result = new customer | wellcomeMessage | add award | save customer | send that wellcome message back.
+    //If exists = same as above but without creating a new customer
+
+    def (customer, welcomeMessage) = calculationsService.processCheckin(lookup)
+    render(view: "checkin", model: [customer: customer, welcomeMessage: welcomeMessage])
+}
+----
+
+Within `CalculationService` define a new `action`
+What we do is to reuse the code created earlier.
+
+[source, groovy]
+----
+def processCheckin(lookup) {
+
+    def customer = Customer.findByPhone(lookup.phone)
+
+    //Check for new customer
+    if (customer == null) {
+        customer = lookup
+        customer.firstName = "Customer"
+    }
+
+    //Set total awards
+    def totalAwards = 0
+    customer.awards.each {
+        totalAwards = totalAwards + it.points
+    }
+    customer.totalPoints = totalAwards
+
+    //Create welcome message
+    def welcomeMessage = ""
+    switch (totalAwards) {
+        case 5:
+            welcomeMessage = "Welcome back $customer.firstName, this drink is on us"
+            break
+        case 4:
+            welcomeMessage = "Welcome back $customer.firstName, your next drink is free"
+            break
+        case 1..3:
+            welcomeMessage = "Welcome back $customer.firstName, you have $totalAwards points"
+            break
+        default:
+            welcomeMessage = "Welcome $customer.firstName. Thanks for registering"
+            break
+    }
+
+    if (totalAwards < 5) {
+        customer.addToAwards(new Award(awardDate: new Date(), type: "Purchase", points: 1))
+    } else {
+        customer.addToAwards(new Award(awardDate: new Date(), type: "Purchase", points: -5))
+    }
+
+    //Save to the database
+    customer.save(flush: true)
+
+    return [customer, welcomeMessage]
+}
+----
+
+TODO - profile of the customer
 
 *App is finished!*
 
