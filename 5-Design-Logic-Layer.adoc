@@ -87,8 +87,8 @@ def strings() {
 ----
     def conditions() {
 
-        /** Example of condition in groovy
-         *  As you can see it accepts ranges "2..3"
+        /** Example of simple condition in groovy that we will use in our service
+         *  Bonus groovy support ranges within conditions "2..3"
          */
 
         def firstName = "Mike"
