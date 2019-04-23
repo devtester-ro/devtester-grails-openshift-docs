@@ -25,7 +25,7 @@ Explain the domains that need to be created:
 
 image::images/db-schema.PNG[image,400,600]
 
-*Step 1: Create Domain Classes*
+*Step 2: Create Domain Classes*
 
 - Open `grails-app` -> `domains`
 - Right Click on `domains`
@@ -124,7 +124,7 @@ Now let's refactor that Order.groovy class:
 - Right Click on `Order.groovy` -> Refactor - and just give it a new name like `OnlineOrder`
 - Re-run application and check if everything is ok.
 
-*Step 2: Scaffolding*
+*Step 3: Dynamic Scaffolding*
 
 Working with Data, build a complete front-end and controllers so that you can perform `CRUD` operations.
 
@@ -151,9 +151,9 @@ image::images/scaffold-customer.PNG[image]
 
 *Note:* don't forget to add the specific `scaffold` of each model and not have each controller with `Customer`
 
-- If you want to customize the view for `scaffolding` you need to use `static` not `dynamic` but this we will not cover in this lab, still is good to know that it exists.
+- If you want to customize the view for `scaffolding` you need to use `static scaffolding` not `dynamic scaffolding` but this we will not cover in this lab, still is good to know that it exists.
 
-*Step 3: Constraints*
+*Step 4: Constraints*
 
 - Create mandatory fields
 - How many chars a user can enter
@@ -191,7 +191,7 @@ class Customer {
 
 image::images/db-constraints.PNG[image]
 
-*Step 3: Bootstrapping*
+*Step 5: Bootstrapping*
 
 You may have noticed by now that your data will be destroyed at every app re-run. So to have a set of data inserted at app start we will use `BootStrap.groovy`
 
