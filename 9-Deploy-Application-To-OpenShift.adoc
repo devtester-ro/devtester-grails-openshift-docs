@@ -31,6 +31,7 @@ image::images/route-activated.PNG[image]
 *Congrats you have finished all labs!*
 
 You should have the app deployed and running the same as:
+
  **http://grails-devtester-devtester-grails.1d35.starter-us-east-1.openshiftapps.com/customer/checkin
 
 link:10-Next-Steps.adoc[Next Lab: Next Steps] | link:0-Readme.adoc[Table Of Contents]
