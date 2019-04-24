@@ -33,7 +33,7 @@ By now you should get the hang of it so I will just say:
 
 === Step 3: (Demo Form) - Populate The Form
 
-It's time to populate the form and have a working controller, this will help us gain knowledge and go forward with our application.
+It's time to populate the `_form` and have a working controller, this will help us gain knowledge and go forward with our application.
 
 [source,html]
 ----
