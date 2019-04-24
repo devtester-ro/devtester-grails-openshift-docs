@@ -1,4 +1,4 @@
-# Grails 3.3.9 Basic Application in OpenShift
+# Grails 4.0.0 Basic Application in OpenShift
 
 - Create your very first full-stack web application and deploy it in a cloud environment.
 - A step by step guide using the latest technologies.
