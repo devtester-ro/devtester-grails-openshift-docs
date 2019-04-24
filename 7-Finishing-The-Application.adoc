@@ -108,9 +108,13 @@ def processCheckin(lookup) {
 }
 ----
 
-TODO - profile of the customer
+I will stay with the current state of the app possible update
 
-*App is finished!*
+- Refactor code
+- Write tests
+- Create a profile view and disable the scaffolding
+
+*My part with the App is finished!*
 
 We can now move on to xxx of our application.
 
