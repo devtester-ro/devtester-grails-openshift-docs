@@ -41,6 +41,7 @@ c. go - submit the data.
 ----
 
 Since `delete` is basically an redirect this is simple but `submit` actually calls an `action` from `checkin.gsp` -> `customerLookup`
+So let's edit `checkin.gsp`
 
 [source, html]
 ----
