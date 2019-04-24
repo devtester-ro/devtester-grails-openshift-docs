@@ -75,7 +75,13 @@ task buildImage(type: DockerBuildImage, dependsOn: createDockerfile) {
 - It should stay under `src` -> `main` -> `docker`.
 - Since we are using `windows` this file will run under `linux` so chmod can't use `windows` files - http://dos2unix.sourceforge.net/.
 
-- Before we can run please update the `production db` -> `application.yaml` -> `dbCreate` same as for `development` (OpenShift trial has limited resources).
+- Before we can run please update the `production db` -> `application.yaml` -> see below (OpenShift trial has limited resources).
+
+[source, yaml]
+----
+dbCreate: create-drop
+url: jdbc:h2:mem:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+----
 
 - Bring up a `terminal` / `cmd` - e.g `C:\Users\level\IdeaProjects\devtester-grails-openshift>.\gradlew buildImage`
 
