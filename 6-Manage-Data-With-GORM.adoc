@@ -1,5 +1,5 @@
 [[create-mvc]]
-== Design Logic Layer - Groovy Basics
+== Manage Data With GORM
 
 In this Lab we will learn how to manipulate data.
 
