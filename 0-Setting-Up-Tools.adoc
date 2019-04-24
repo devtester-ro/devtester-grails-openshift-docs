@@ -60,9 +60,9 @@ image::images/openshift-catalog.PNG[image]
 
 [source,shell]
 ----
-$ java --version
-$ grails --version
-$ docker --version
+$ java -version
+$ grails -version
+$ docker -version
 ----
 
 *Troubleshooting*
