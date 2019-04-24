@@ -13,9 +13,9 @@ After completing this section, you should be able to:
 
 *Locating the binaries or executables*
 
-* Java: https://www.oracle.com/technetwork/java/javase/downloads/index.html - version 1.8
+* Java: https://www.oracle.com/technetwork/java/javase/downloads/index.html - version 1.8 and 10 (verified)
     ** Install Java with default.
-* Grails: https://grails.org/download.html - version 3.3.9
+* Grails: https://grails.org/download.html - version 4.0.0M2 or R1 (verified)
     ** Please download the latest zip file.
     ** Don't do anything with it yet.
 * IntelliJ Ultimate: https://www.jetbrains.com/idea/download/#section=windows (for Grails support)
@@ -75,5 +75,23 @@ $ docker -version
     ** If you have less than `2GB Ram` available for Docker please lower the memory usage.
 - Hibernate:
     ** Please note that when using any database operations the specific class has to be annotated with `@Transactional` - `import grails.gorm.transactions.Transactional`
+
+- OpenShift memory issue:
+    ** First thing after your project is created - lower the mem usage.
+    ** Since OpenShift lacks of resources we need to boot the app using less than `1Gb` of memory so please do it now or it will bite you later.
+
+[shell, groovy]
+----
+bootRun {
+    jvmArgs(
+            '-Dspring.output.ansi.enabled=always',
+            '-noverify',
+            '-XX:TieredStopAtLevel=1',
+            '-Xmx512m')
+    sourceResources sourceSets.main
+    String springProfilesActive = 'spring.profiles.active'
+    systemProperty springProfilesActive, System.getProperty(springProfilesActive)
+}
+----
 
 link:1-Create-New-Project.adoc[Next Lab: Create New Project] | link:0-Readme.adoc[Table Of Contents]
