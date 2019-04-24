@@ -21,7 +21,7 @@ In this Lab we will look at how design our Web Layer.
 
 === Step 2: (Demo Form) - Create New Controller
 
-By now you should the hang of it so I will just say:
+By now you should get the hang of it so I will just say:
 
 - `controller` -> Name - `feedback`.
 - Now lets add the `view` for that controller -> `files` -> `index.gsp` + `_form.gsp` (this project)

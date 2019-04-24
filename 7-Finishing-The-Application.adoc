@@ -8,15 +8,22 @@ In this Lab we will finish our application.
 For the final touches we want to first link the two button `go` and `delete`
 
 - First off - `open` -> `_kioskForm.gsp`
-- Navigate to the - `Fourth button row`
+- Navigate to the - `Begin First Row` and `Fourth Button Row`
 
 We need to modify:
 
-a. delete - just to redirect to this page.
-b. go - submit the data.
+a. replace the plain text with a variable
+b. delete - just to redirect to this page.
+c. go - submit the data.
 
 [source, html]
 ----
+<div class="row"><!-- Begin First Row -->
+    <div class="col-sm-5 col-sm-offset-1"><!-- Welcome Column -->
+        <h4>${welcomeMessage}</h4>
+    </div>
+
+
 <div class="row"><!-- Fourth Button Row -->
     <div class="col-sm-4">
         <g:link class="btn btn-danger btn-lg btn-block" action="checkin">Del</g:link>
@@ -116,6 +123,6 @@ I will stay with the current state of the app possible update
 
 *My part with the App is finished!*
 
-We can now move on to xxx of our application.
+We can now move on to Run our application using Docker.
 
 link:8-Run-Application-Within-Docker.adoc[Next Lab: Run Application Within Docker Containers] | link:0-Readme.adoc[Table Of Contents]

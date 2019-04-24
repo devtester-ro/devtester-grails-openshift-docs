@@ -1,26 +1,26 @@
-[[create-mvc]]
-== Run Application Within Docker
+[[lab-9]]
+== Deploy Application To OpenShift
 
 In this Lab we will create a docker image that can be used locally or in any cloud environment.
 
 === Step 1: Login and Create a Project
 
-- Open browser at - https://manage.openshift.com/
-- Login and hit the `Open Web Console`
-- Click on `Create Project` and give it a `name`
-- Select `Deploy Image` - paste the docker image name including its version
+- Open browser at - https://manage.openshift.com/.
+- Login and hit the `Open Web Console`.
+- Click on `Create Project` and give it a `name`.
+- Select `Deploy Image` - paste the docker image name including its version.
 
 image::images/deploy-image.PNG[image]
 
-- We can go and see the logs for our `container` due note that in OpenShift they are called `pods`
+- We can go and see the logs for our `container` due note that in OpenShift they are called `pods`.
 
-- Click on `Applications` -> `Pods` -> select desired `pod` -> hit `logs`
+- Click on `Applications` -> `Pods` -> select desired `pod` -> hit `logs`.
 
 image::images/pods.PNG[image]
 image::images/logs.PNG[image]
 
-- Now if you try the http://localhost:8080 it doesn't work, for this we need to create a `Route`
-- Click on `Applications` -> `Routes` -> `Create Route`
+- Now if you try the http://localhost:8080 it doesn't work, for this we need to create a `Route`.
+- Click on `Applications` -> `Routes` -> `Create Route`.
 
 image::images/create-route.PNG[image]
 

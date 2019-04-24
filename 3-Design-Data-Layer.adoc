@@ -8,7 +8,7 @@ In this Lab we will look at how design our Data Layer.
 We need to understand what our application does so the best way is to have some use cases:
 
 - Use Case #1: When a `customer` orders a beverage they receive an `award`.
-- Use Case #2: A customer can go `online` an place an `order`.
+- Use Case #2: A customer can go `online` and place an `order`.
 - Use Case #3: An online order can contain many `items`.
 - Use Case #4: You purchase a `product` in each order item.
 

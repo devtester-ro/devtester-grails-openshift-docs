@@ -1,4 +1,4 @@
-[[create-mvc]]
+[[lab-8]]
 == Run Application Within Docker
 
 In this Lab we will create a docker image that can be used locally or in any cloud environment.
@@ -6,9 +6,9 @@ In this Lab we will create a docker image that can be used locally or in any clo
 === Step 1: Using Gradle Docker Plugin
 
 There are several ways in how we can use docker to create a container with our app that can run on any env.
-We will focus on using a plugin since it's much easier to integrate with `gradle`
+We will focus on using a plugin since it's much easier to integrate with `gradle`.
 
-- Open `build.gradle` - note that you have a comment to change an alias
+- Open `build.gradle` - note that you have a comment to change an alias.
 
 [source, groovy]
 ----
@@ -71,13 +71,13 @@ task buildImage(type: DockerBuildImage, dependsOn: createDockerfile) {
 
 === Step 2: Entrypoint and Build
 
-- From the above script you need to add also a `app-entrypoint.sh` that can be found in `files` (this project)
-- It should stay under `src` -> `main` -> `docker`
-- Since we are using `windows` this file will run under `linux` so chmod can't use `windows` files - http://dos2unix.sourceforge.net/
+- From the above script you need to add also a `app-entrypoint.sh` that can be found in `files` (this project).
+- It should stay under `src` -> `main` -> `docker`.
+- Since we are using `windows` this file will run under `linux` so chmod can't use `windows` files - http://dos2unix.sourceforge.net/.
 
-- Before we can run please update the `production db` -> `application.yaml` -> `dbCreate` same as for `development` (OpenShift trial has limited resources)
+- Before we can run please update the `production db` -> `application.yaml` -> `dbCreate` same as for `development` (OpenShift trial has limited resources).
 
-- Bring up a `terminal` / `cmd` - C:\Users\level\IdeaProjects\devtester-grails-openshift>.\gradlew buildImage
+- Bring up a `terminal` / `cmd` - e.g `C:\Users\level\IdeaProjects\devtester-grails-openshift>.\gradlew buildImage`
 
 [source, shell]
 ----
@@ -140,7 +140,7 @@ Image view it as a `iso` file you need to run in order for the operating system 
 
 *Cloud Run:*
 
-- `docker login` - use your credentials to login
+- `docker login` - use your credentials to loginm
 - `docker push levelik/devtester-grails-openshift:0.1`
 
 image::images/docker-hub.PNG[image]
