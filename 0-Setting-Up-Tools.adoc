@@ -79,7 +79,7 @@ $ docker -version
 
 - OpenShift memory issue:
     ** First thing after your project is created - lower the mem usage.
-    ** Since OpenShift lacks of resources we need to boot the app using less than `1Gb` of memory so please do it now or it will bite you later.
+    ** Since OpenShift lacks of resources we need to boot the app using less than `1Gb` of memory so please do right after you create the project.
 
 [shell, groovy]
 ----
