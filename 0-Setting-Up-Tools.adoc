@@ -23,6 +23,7 @@ After completing this section, you should be able to:
 * Docker: https://hub.docker.com/editions/community/docker-ce-desktop-windows (please register)
     ** Install Docker with default.
 * OpenShift: https://www.openshift.com/trial/ (please sign up and create a sandbox)
+    ** 30 minutes sandbox - https://learn.openshift.com/introduction/getting-started/  (for thoes of you that haven't registered)
 
 *Environment Variables:*
 
