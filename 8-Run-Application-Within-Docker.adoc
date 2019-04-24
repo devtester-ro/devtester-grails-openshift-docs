@@ -170,4 +170,4 @@ PS C:\Users\level>
 
 *Docker is up and running and also a public image is available!*
 
-link:8-Deploy-Application-To-OpenShift.adoc[Next Lab: Deploy Application to OpenShift | link:0-Readme.adoc[Table Of Contents]
+link:8-Deploy-Application-To-OpenShift.adoc[Next Lab: Deploy Application to OpenShift] | link:0-Readme.adoc[Table Of Contents]
