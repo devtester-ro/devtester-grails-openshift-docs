@@ -15,7 +15,7 @@ After completing this section, you should be able to:
 
 * Java: https://www.oracle.com/technetwork/java/javase/downloads/index.html - version 1.8 and 10 (verified)
     ** Install Java with default.
-* Grails: https://grails.org/download.html - version 4.0.0M2 or R1 (verified)
+* Grails: https://github.com/grails/grails-core/releases - version 4.0.0M2 or R1 (verified)
     ** Please download the latest zip file.
     ** Don't do anything with it yet.
 * IntelliJ Ultimate: https://www.jetbrains.com/idea/download/#section=windows (for Grails support)
