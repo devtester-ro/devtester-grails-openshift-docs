@@ -13,9 +13,9 @@ After completing this section, you should be able to:
 
 *Locating the binaries or executables*
 
-* Java: https://www.oracle.com/technetwork/java/javase/downloads/index.html (any jdk version should work just fine)
+* Java: https://www.oracle.com/technetwork/java/javase/downloads/index.html - version 1.8
     ** Install Java with default.
-* Grails: https://github.com/grails/grails-core/releases (latest release)
+* Grails: https://grails.org/download.html - version 3.3.9
     ** Please download the latest zip file.
     ** Don't do anything with it yet.
 * IntelliJ Ultimate: https://www.jetbrains.com/idea/download/#section=windows (for Grails support)
