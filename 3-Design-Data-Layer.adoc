@@ -180,7 +180,7 @@ class Customer {
 
 [source,groovy]
 ----
-class Customer {
+class Award {
     // type is now a nice drop down with our defined list
     static constraints = {
         type(inList: ["Purchase", "Reward"])
