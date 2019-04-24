@@ -117,6 +117,8 @@ class Product {
 
 - Run the application and browse to `/h2-console`
 
+*Note:* if you are using `Grails 3.x` please use `/dbconsole` for accessing the in memory database.
+
 *Question:* Do you know why the Order table hasn't been created?
 
 Now let's refactor that Order.groovy class:
